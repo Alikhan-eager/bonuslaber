@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!------------------Bootstrap--------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!------------------CSS--------------------->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!----------------Rectangles----------------------->
+    <div class="row mx-1">
+      <div
+        id="apple"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>apple</p>
+      </div>
+      <div
+        id="Napolean Hill"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>Napolean Hill</p>
+      </div>
+      <div
+        id="ThinkandGrowRich"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>Think and Grow Rich</p>
+      </div>
+      <div
+        id="dog"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>dog</p>
+      </div>
+      <div
+        id="NicomacheanEthics"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>Nicomachean Ethics</p>
+      </div>
+      <div
+        id="cat"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>cat</p>
+      </div>
+      <div
+        id="banana"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>banana</p>
+      </div>
+      <div
+        id="Aristotel"
+        onmouseover="big(this)"
+        onmouseout="small(this)"
+        class="col"
+      >
+        <p>Aristotel</p>
+      </div>
+    </div>
+    <!------------------Buttons--------------------->
+    <div class="justify-content-center d-flex p-5">
+      <button
+        onclick="myFruits()"
+        type="button"
+        class="btn btn-outline-primary"
+      >
+        Fruits
+      </button>
+      <button
+        onclick="myPersons()"
+        type="button"
+        class="btn btn-outline-secondary"
+      >
+        Persons
+      </button>
+      <button onclick="myBooks()" type="button" class="btn btn-outline-success">
+        Books
+      </button>
+      <button
+        onclick="myAnimals()"
+        type="button"
+        class="btn btn-outline-success"
+      >
+        Animals
+      </button>
+      <button onclick="alle()" type="button" class="btn btn-outline-success">
+        ALL
+      </button>
+    </div>
+    <p onmouseover="change()" id="demo">Date time</p>
+
+    <!-----------------Js Bootstrap----------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!------------------JavaScript--------------------->
+    <script type="text/javascript" src="./js/dom.js"></script>
+  </body>
+</html>

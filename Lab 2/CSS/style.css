@@ -1,0 +1,80 @@
+.S{
+    margin: 0;
+    padding: 0;
+}
+.a{
+    height: 50px;
+    border:  solid black    ;
+    background-color:rgb(255, 0 , 0);
+    text-align: left  ;
+    color: white;
+    
+}
+.b{
+    color: red;
+}
+.M{
+    color: rgba(237,28,36,0.8);
+    margin: -15px 0 0 0 ;
+}
+.H{
+    margin: -2px 0 0 0 ;
+    color:#FF0000 
+}
+.P{
+    display: inline block;
+    background-color: red;
+    color: white;
+}
+.A{
+    background-color: yellow;
+    border:  solid;  
+    padding : 0 0px;
+    height: 50px;
+    text-align: left;
+}
+.Mar{
+    border-top-style: dotted;
+    border-top-color: green;
+    border-bottom-style: dashed;
+    border-bottom-color: #FF0000;
+    margin: 10px 20px;
+}
+.SS{
+    color: white;
+    background-color: red;
+    border: solid black;
+    text-align: left;
+    border-radius: 18px;
+   
+}
+.rounded{
+   border: solid black;
+   border-radius: 100%;
+   background-color: yellow;
+   padding-left: 12px;
+}
+.circle{
+    border: solid black;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+.color{
+    color: green;
+    text-decoration: underline;
+}
+.inline{
+     display: inline;
+     background-color: yellow;
+}
+.inline-block{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 45px;
+}

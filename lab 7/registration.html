@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        background: #0f2027; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2c5364,
+          #203a43,
+          #0f2027
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2c5364,
+          #203a43,
+          #0f2027
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      input {
+        margin: 5.2px 0;
+      }
+      .rightMargin {
+        margin: 0 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-vh-100 d-flex justify-content-center align-items-center">
+      <form
+        onsubmit="onSubmit(event)"
+        class="box bg-light p-5 pt-4 d-flex flex-column"
+        action="#"
+      >
+        <h1 class="text-center">Registration</h1>
+        <!-- name -->
+        <label for="full_name">Full name</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            id="full_name"
+            type="text"
+            name="full_name"
+            placeholder=""
+            required
+          />
+        </div>
+        <!-- email -->
+        <label for="email">Email</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            id="email"
+            type="email"
+            name="email"
+            placeholder=""
+            required
+          />
+        </div>
+        <!-- password -->
+        <label for="Password">Password</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            id="password"
+            type="password"
+            name="password"
+            placeholder=""
+            required
+          />
+        </div>
+
+        <label for="Password">Confirm password</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            id="cpassword"
+            type="password"
+            name="cpassword"
+            placeholder=""
+            required
+          />
+        </div>
+
+        <!-- image -->
+        <label for="file">Select your image</label>
+        <input class="form-control" type="file" id="file" name="myImg" />
+        <!-- ageDate -->
+        <label for="birthDate">Birth date</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            type="date"
+            name="myDate"
+            id="birthDate"
+          />
+        </div>
+        <!-- current time -->
+        <label for="time_birth">Current time</label>
+        <div class="input-group input-group-lg">
+          <input
+            class="form-control"
+            type="time"
+            name="myTime"
+            id="time_birth"
+          />
+        </div>
+        <!-- gender -->
+
+        <div class="d-flex">
+          <label for="">Gender: </label>
+          <label class="rightMargin" for="male">Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label class="rightMargin" for="female">Female</label>
+          <input type="radio" id="female" name="gender" value="Female" />
+        </div>
+        <!-- color -->
+        <label for="fcolor">Color: </label>
+        <div class="d-flex">
+          <input
+            class="form-control-color"
+            type="color"
+            id="fcolor"
+            name="fcolor"
+            value="#e66465"
+          />
+        </div>
+        <!-- country checkbox -->
+        <div class="d-flex">
+          <label for="countries">Choose a car: </label>
+          <select id="countries" name="countries">
+            <option value="volvo">KAZ</option>
+            <option value="saab">USA</option>
+            <option value="fiat">RUSSIA</option>
+            <option value="audi">SPAIN</option>
+          </select>
+        </div>
+        <!-- car textArea  -->
+        <label for="fovorite_car">Your favorite car</label>
+        <textarea disabled id="fovorite_car" name="car" rows="1"></textarea>
+        <!-- register -->
+        <button type="submit" class="btn btn-primary btn-lg mt-4">
+          Register
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dom.js"></script>
+  </body>
+</html>

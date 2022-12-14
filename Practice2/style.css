@@ -1,0 +1,9 @@
+.small-image{
+    object-position: bottom;
+    width: 700px;
+    background-color: black;
+}
+.small-image > img{
+    display: block;
+    width: 100%;
+}
